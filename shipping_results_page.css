@@ -1,0 +1,33 @@
+/*make the website scrollable*/
+html {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+
+/*Font for the home page*/ 
+h1, body {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    /*background-color: #fff0db;*/
+    
+}
+
+/*Background Image for the Home Page*/
+body {
+    background-image: url('travel2.jpg'); 
+}
+
+.contact_info {
+    border: 2px solid #000000;
+    background-color: white;
+    width: 467px;
+    height: 300px;
+    text-align: center;
+}
+
+.shipping_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

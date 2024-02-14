@@ -1,0 +1,67 @@
+/*make the website scrollable*/
+html {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+
+/*Font for the home page*/ 
+h1, body {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    /*background-color: #fff0db;*/
+    
+}
+
+/*Background Image for the Home Page*/
+body {
+    background-image: url('travel2.jpg'); 
+}
+
+
+/*The About US box, and description*/
+.about_us, h2, .web-description {
+    border: 2px solid #F096B8;
+    background-color: beige;
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.about_us h1 {
+    font-size: 17px;
+}
+
+.web-description h1 {
+    border: 1px dashed beige;
+    font-size: 17px; 
+    color: #000000; 
+    margin-bottom: 10px; /*spacing below the header */
+}
+
+/*Centering the photos container */
+.luggage-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+/* Ensure images don't exceed container width */
+.luggage-photo-container img {
+    max-width: 100%; 
+}
+
+/*Centering the product photos*/
+.travel-products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+.travel-products-container img {
+    max-width: 100%;
+}
+
+
