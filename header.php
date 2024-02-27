@@ -61,9 +61,8 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/product_list_page.php">Products</li>
                 <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/home_page.php">About Us</a></li>
-                <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/shipping_page.php">Shipping</a></li>
+                <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/shipping_page.php">Shop</a></li>
                 <li><a href="https://www.linkedin.com/in/nahallah-champagne-852349229/">Contact Us</a></li>
             </ul>
         </nav>

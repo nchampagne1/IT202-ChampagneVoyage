@@ -1,7 +1,7 @@
 <!-- Slide 25 -->
 <html>
   <head>
-    <title>My Guitar Shop</title>
+    <title>CHAMPAGNE Voyage</title>
   </head>
   <body>
     <main>
