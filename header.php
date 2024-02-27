@@ -53,7 +53,6 @@
     </style>
 </head>
 
-
 <body>
 <header>
     <!--Navigation Bar-->

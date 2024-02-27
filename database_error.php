@@ -1,4 +1,3 @@
-<!-- Slide 25 -->
 <html>
   <head>
     <title>CHAMPAGNE Voyage</title>

@@ -26,6 +26,7 @@ body {
     font-size: large;
     color: black;
 }
+
 form {
     margin: .5em 0 1em;
 }
@@ -34,9 +35,11 @@ form label {
     padding-right: 1em;
     float: left;
 }
+
 br {
     clear: left;
 }
+
 .categories h5 {
     color: goldenrod;
 }
@@ -44,4 +47,3 @@ br {
 td {
     background-color: white;
 }
-
