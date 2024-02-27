@@ -1,0 +1,47 @@
+html {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url('images/travel2.jpg'); 
+}
+
+.categories nav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.categories nav ul li {
+	display: inline-block;
+    margin-right: 10px;
+}
+.categories a {
+  padding: 10px;
+}
+.categories td {
+    border: 1px solid black;
+    padding: .2em .5em .2em .5em;
+
+}
+.categories h4 {
+    font-size: large;
+    color: black;
+}
+form {
+    margin: .5em 0 1em;
+}
+form label {
+    width: 6em;
+    padding-right: 1em;
+    float: left;
+}
+br {
+    clear: left;
+}
+.categories h5 {
+    color: goldenrod;
+}
+
+td {
+    background-color: white;
+}
+

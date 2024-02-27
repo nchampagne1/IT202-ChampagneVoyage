@@ -15,7 +15,7 @@ h1, body {
 
 /*Background Image for the Home Page*/
 body {
-    background-image: url('travel2.jpg'); 
+    background-image: url('images/travel2.jpg'); 
 }
 
 
@@ -63,5 +63,3 @@ body {
 .travel-products-container img {
     max-width: 100%;
 }
-
-

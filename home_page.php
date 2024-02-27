@@ -2,7 +2,7 @@
     <head>
         <title>CHAMPAGNE Voyage</title>
         <!--reference the css page for styling-->
-        <link rel="stylesheet" href="home_page.css" />
+            <link rel="stylesheet" href="home_page.css" />
     </head>
     <body>
         <!--Header Code-->
