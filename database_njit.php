@@ -1,5 +1,5 @@
 <?php
-// Slide 24
+// Slide 24 - Checks if I am connected to my database
     $dsn = "mysql:host=sql1.njit.edu;port=3306;dbname=nac88";
     $username = 'nac88';
     $password = 'myD@t@b@se1';

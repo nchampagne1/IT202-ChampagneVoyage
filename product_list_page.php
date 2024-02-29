@@ -42,7 +42,7 @@
 <body>
   <?php include 'header.php'; ?>
   <main>
-        <div class="categories">
+        <figure class="categories">
             <h1>Product List Manager</h1>
             <aside>
                 <!-- display a list of categories -->
@@ -86,7 +86,7 @@
                     <?php endforeach; ?>      
                 </table>
             </section>
-        </div>
+        </figure>
     </main>  
     <footer><?php include 'footer.php'; ?></footer>
   </body>
