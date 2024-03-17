@@ -1,3 +1,6 @@
+<!--Nahallah Champagne, Feburary 28, 2024
+IT 202-004, Prject 02, nac88@njit.edu-->
+
 <?php
 // Slide 24 - Checks if I am connected to my database
     $dsn = "mysql:host=sql1.njit.edu;port=3306;dbname=nac88";

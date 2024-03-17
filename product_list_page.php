@@ -1,3 +1,6 @@
+<!--Nahallah Champagne, Feburary 28, 2024
+IT 202-004, Prject 02, nac88@njit.edu-->
+
 <?php
   //Use database local or njit local
   require_once('database_njit.php');
