@@ -1,12 +1,15 @@
 /*Nahallah Champagne, Feburary 28, 2024
-IT 202-004, Prject 02, nac88@njit.edu*/
+IT 202-004, Project 02, nac88@njit.edu*/
 
 html {
     font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 body {
-    background-image: url('images/travel2.jpg'); 
+    background-image: url('images/travel2.jpg');
+
+    background-size: cover;
+    height: 100%;
 }
 
 .categories nav ul {
@@ -41,4 +44,12 @@ form label {
 
 br {
     clear: left;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
 }

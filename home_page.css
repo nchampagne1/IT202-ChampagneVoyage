@@ -1,5 +1,5 @@
 /*Nahallah Champagne, Feburary 14, 2024
-IT 202-004, Prject 01, nac88@njit.edu*/
+IT 202-004, Project 01, nac88@njit.edu*/
 
 
 /*make the website scrollable*/
@@ -14,12 +14,14 @@ html {
 h1, body {
     font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
     /*background-color: #fff0db;*/
-    
 }
 
 /*Background Image for the Home Page*/
 body {
-    background-image: url('images/travel2.jpg'); 
+    background-image: url('images/travel2.jpg');
+
+    background-size: cover;
+    height: 100%;
 }
 
 

@@ -1,5 +1,5 @@
-/*Nahallah Champagne, Feburary 14, 2024
-IT 202-004, Project 01, nac88@njit.edu*/
+/*Nahallah Champagne, March 22, 2024
+IT 202-004, Project 03, nac88@njit.edu*/
 
 /*make the website scrollable*/
 html {
@@ -16,19 +16,17 @@ h1, body {
     
 }
 
-/*Background Image for the Home Page*/
+/*Background Image all Pages*/
 body {
-    background-image: url('images/travel2.jpg'); 
+    background-image: url('images/travel2.jpg');
 
     background-size: cover;
     height: 100%;
 }
 
-.contact_info {
-    border: 2px solid #000000;
-    background-color: white;
-    width: 467px;
-    height: 300px;
-    text-align: center;
+/*The line*/
+.line hr {
+    height: 3px;
+    border: 0;
+    background: black;
 }
-
