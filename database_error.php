@@ -1,5 +1,5 @@
 <!--Nahallah Champagne, Feburary 28, 2024
-IT 202-004, Prject 02, nac88@njit.edu-->
+IT 202-004, Project 02, nac88@njit.edu-->
 
 <!--Database error code-->
 <html>
