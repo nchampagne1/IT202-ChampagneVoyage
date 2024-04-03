@@ -31,6 +31,9 @@ if ($description == NULL) {
 if ($price == NULL || $price == false) {
     $error = "Column \"Price\" is empty or invaild. Please check all fields and try again.";
     echo "$error <br>";
+} else if ($price <= 0 || $price >= 5000) {
+    $error = "Column \"Price\" is invaild. Please enter a valid price.";
+    echo "$error <br>";
 }
 
 if ($size == NULL) {
