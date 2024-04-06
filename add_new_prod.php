@@ -2,6 +2,9 @@
 IT 202-004, Project 03, nac88@njit.edu-->
 
 <?php
+//Use database local or njit local
+require_once('database_njit.php');
+$db = getDB();
 
 // Get the product data
 $travel_category_id = filter_input(INPUT_POST, 'travel_category_id', FILTER_VALIDATE_INT);

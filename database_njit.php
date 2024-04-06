@@ -2,6 +2,7 @@
 IT 202-004, Project 02, nac88@njit.edu-->
 
 <?php
+function getDB() {
 // Slide 24 - Checks if I am connected to my database
     $dsn = "mysql:host=sql1.njit.edu;port=3306;dbname=nac88";
     $username = 'nac88';
@@ -16,4 +17,10 @@ IT 202-004, Project 02, nac88@njit.edu-->
         include("database_error.php");
         exit();
     }
+
+    //Modify line 18 and 19
+    return $db;
+}
+
+?>
   

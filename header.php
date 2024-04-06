@@ -1,8 +1,13 @@
 <!--Nahallah Champagne, Feburary 14, 2024
 IT 202-004, Project 01, nac88@njit.edu-->
 
+<!DOCTYPE html>
 <html>
 <head>
+<?php
+// Start the session
+session_start();
+?>
     <style>
         .headFont {
             font-size: 60%;
@@ -20,7 +25,7 @@ IT 202-004, Project 01, nac88@njit.edu-->
         .Nav-Bar h1 {
             margin: 0;
             text-align: center;
-            margin-right: 640px;
+            margin-right: 650px;
         }
 
         .Nav-Bar nav {
@@ -33,7 +38,7 @@ IT 202-004, Project 01, nac88@njit.edu-->
             padding: 0; /* Remove padding */
             margin: 0; /* Remove margin */
             text-align: left;
-            margin-left: 2%;
+            margin-right: 2%;
         }
 
         .Nav-Bar nav ul li {
@@ -56,10 +61,11 @@ IT 202-004, Project 01, nac88@njit.edu-->
             color: #828489; /*text color for when the mouse hovers over the link*/ 
         }
 
-        /*W3Schools inspired code to make one of the variables in my nav have a dropdown menu*/
+        /*W3Schools inspired code to make one of the variables in my nav have a dropdown menu------------*/
         .dropdown {
-            float: left;
-            overflow: hidden;
+            position: relative; /* Set the positioning context for the dropdown */
+            display: inline-block; /* Display the dropdown as inline block */
+            margin-left: -4%;
         }
 
         .dropdown .dropbtn {
@@ -90,6 +96,8 @@ IT 202-004, Project 01, nac88@njit.edu-->
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
+            top: 100%; /* Position the dropdown content below the dropdown button */
+            /*left: 0;*/
         }
 
         .dropdown-content a {
@@ -107,8 +115,7 @@ IT 202-004, Project 01, nac88@njit.edu-->
         .Nav-Bar a:hover, .dropdown:hover .dropbtn {
             background-color: #F26C9E;
         }
-
-
+        /*End of dropdown menu stuff-----------------------------------------------------------------------*/
     </style>
 </head>
 
@@ -116,32 +123,53 @@ IT 202-004, Project 01, nac88@njit.edu-->
 <header>
     <!--Navigation Bar-->
     <div class="Nav-Bar">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <!--A drop down menu, very fancy-->
-                <div class="dropdown"><button class="dropbtn">Products 
-                    <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="http://localhost/nac88/IT202-nac88-travelwebsite/product_list_page.php">Product List Manager</a>
-                        <a href="http://localhost/nac88/IT202-nac88-travelwebsite/add_new_prod_form.php">Product Manager</a>
-                        <a href="#">Undefined Product 3</a>
-                    </div>
-                </div> 
-                <!--End of drop down menu-->
-                <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/home_page.php">About Us</a></li>
-                <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/shipping_page.php">Shipping</a></li>
-                <li><a href="https://www.linkedin.com/in/nahallah-champagne-852349229/">Contact Us</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/home_page.php">About Us</a></li>
+            <?php 
+            // Check if the user is logged in
+            if (isset($_SESSION['is_valid_admin'])) { 
+            ?>
+            <li><a href="logout.php">Logout</a></li>
+            <!--Dropdown menu, based on the user authentication-->
+            <div class="dropdown">
+                <button class="dropbtn">Products 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="http://localhost/nac88/IT202-nac88-travelwebsite/product_list_page.php">Product List Manager</a>
+                    <a href="http://localhost/nac88/IT202-nac88-travelwebsite/add_new_prod_form.php">Product Manager</a>
+                    <a href="#">Undefined Product 3</a>
+                </div>
+            </div>
+            <!--End of drop down menu-->
+            <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/shipping_page.php">Shipping</a></li>
+            <?php } else { ?>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="login.php">Shipping</a></li>
+                <li><a href="login.php">Products</a></li>
+            <?php } ?>
+            <li><a href="https://www.linkedin.com/in/nahallah-champagne-852349229/">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <!-- include an header in line style -->
-        <h1 style= "color: #000000; background-color: #F096B8; font-family: Lucida Handwriting;" > CHAMPAGNE <br>
-        <span class="headFont">Voyage</h1>
+    <!-- Header title -->
+    <h1 style="color: #000000; background-color: #F096B8; font-family: Lucida Handwriting;"> CHAMPAGNE <br>
+        <span class="headFont">Voyage</span>
+    </h1>
 
-    </div>
+    <?php
+    // Check if the manager is logged in
+    if (isset($_SESSION['is_valid_admin']) || $_SESSION['is_valid_admin']) {
+        $firstName = $_SESSION['firstName'] ?? ''; 
+        $lastName = $_SESSION['lastName'] ?? '';
+        $email = $_SESSION['emailAddress'] ?? '';
+        echo "Welcome $firstName $lastName ($email)";
+    }
+?>
+</div>
     <br> 
-
 </header>
+
 </body>
 </html>

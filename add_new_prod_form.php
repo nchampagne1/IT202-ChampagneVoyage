@@ -3,6 +3,7 @@ IT 202-004, Project 03, nac88@njit.edu-->
 
 <?php
 require_once('database_njit.php');
+$db = getDB();
 
 $query = 'SELECT * FROM travelCategories
           ORDER BY travelCategoryID';
