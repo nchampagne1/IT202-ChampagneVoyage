@@ -9,7 +9,7 @@ IT 202-004, Project 01, nac88@njit.edu-->
         background-color: #F26C9E;
         width: 100%;
         bottom: 0;
-        position: fixed;
+        /*position: fixed;*/
         font-size: medium;
     }
     </style>
