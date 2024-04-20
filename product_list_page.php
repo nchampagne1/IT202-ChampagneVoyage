@@ -1,6 +1,9 @@
 <!--Nahallah Champagne, Feburary 28, 2024
 IT 202-004, Project 02, nac88@njit.edu-->
 
+<!--Nahallah Champagne, April 19, 2024
+IT 202-004, Project 05, nac88@njit.edu-->
+
 <?php
 //Use database local or njit local
 require_once('database_njit.php');
@@ -83,22 +86,37 @@ $statement3->closeCursor();
 
                     <?php foreach ($travelItems as $item) : ?>
                         <tr>
-                            <td><?php echo $item['travelItemCode']; ?></td>
+                            <td><a href="product_details.php?travelItemID=<?php echo $item['travelItemID']; ?>">
+                                <?php echo $item['travelItemID']; ?></a></td>
+
                             <td><?php echo $item['travelItemName']; ?></td>
                             <td><?php echo $item['description']; ?></td>
                             <td><?php echo $item['price']; ?></td>
                             <td><?php echo $item['size']; ?></td>
                             <td><?php echo $item['color']; ?></td>
-                            <!-- Add more columns if necessary -->
-                            <!--Code for delete_product.php things--->
+
+                            <!----------------Code for delete_product.php things----------------->
+                            <?php 
+                            // Check if the user is logged in
+                            if (isset($_SESSION['is_valid_admin'])) { 
+                            ?>
                             <td>
-                                <form action="delete_product.php" method="post">
+                                <form action="delete_product.php" method="post" onsubmit="return confirmDelete()">
                                     <input type="hidden" name="travelItemID" value="<?php echo $item['travelItemID']; ?>" />
                                     <input type="hidden" name="travel_category_id" value="<?php echo $item['travelItemCategoryID']; ?>" />
-                                    <input type="submit" value="Delete" />
+                                    <input type="submit" value="Delete"/>
                                 </form>
                             </td>
-                            <!--End of code for delete_proudct_php-->
+                            <?php } ?>
+                            <!-------------------End of code for delete_proudct_php----------------------->
+
+                            <!-------------JavaScript Dialog box---------->
+                            <script>
+                            function confirmDelete() {
+                                return confirm("Are you sure you want to delete this item?");
+                            }
+                            </script>
+                            <!---------End of JavaScript dialong box------->
                         </tr>
                     <?php endforeach; ?>      
                 </table>

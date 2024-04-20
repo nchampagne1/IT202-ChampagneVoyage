@@ -125,7 +125,7 @@ session_start();
     <div class="Nav-Bar">
     <nav>
         <ul>
-            <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/home_page.php">About Us</a></li>
+            <li><a href="home_page.php">About Us</a></li>
             <?php 
             // Check if the user is logged in
             if (isset($_SESSION['is_valid_admin'])) { 
@@ -137,17 +137,27 @@ session_start();
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="http://localhost/nac88/IT202-nac88-travelwebsite/product_list_page.php">Product List Manager</a>
-                    <a href="http://localhost/nac88/IT202-nac88-travelwebsite/add_new_prod_form.php">Product Manager</a>
+                    <a href="product_list_page.php">Product List Manager</a>
+                    <a href="add_new_prod_form.php">Product Manager</a>
                     <a href="#">Undefined Product 3</a>
                 </div>
             </div>
             <!--End of drop down menu-->
-            <li><a href="http://localhost/nac88/IT202-nac88-travelwebsite/shipping_page.php">Shipping</a></li>
+            <li><a href="shipping_page.php">Shipping</a></li>
             <?php } else { ?>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="login.php">Shipping</a></li>
-                <li><a href="login.php">Products</a></li>
+                <!-----Dropdown menu------------->
+                <div class="dropdown">
+                    <button class="dropbtn">Products 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="product_list_page.php">Product List Manager</a>
+                    </div>
+                </div>
+                <!--------Dropdown Menu----------------->
+               
             <?php } ?>
             <li><a href="https://www.linkedin.com/in/nahallah-champagne-852349229/">Contact Us</a></li>
         </ul>
@@ -157,18 +167,40 @@ session_start();
     <h1 style="color: #000000; background-color: #F096B8; font-family: Lucida Handwriting;"> CHAMPAGNE <br>
         <span class="headFont">Voyage</span>
     </h1>
-
+    
+    <!--------Welcome Message------------------------------->
     <?php
-    // Check if the manager is logged in
-    if (isset($_SESSION['is_valid_admin']) || $_SESSION['is_valid_admin']) {
-        $firstName = $_SESSION['firstName'] ?? ''; 
-        $lastName = $_SESSION['lastName'] ?? '';
-        $email = $_SESSION['emailAddress'] ?? '';
-        echo "Welcome $firstName $lastName ($email)";
+    /*
+    require_once('database_njit.php');
+    $db = getDB();
+    //Get category ID
+    $voyage_email = filter_input(INPUT_GET, 'email', FILTER_VALIDATE_EMAIL);
+    echo $voyage_email;
+
+    // Get user details from VoyageManager table
+    $queryUserDetails = 'SELECT firstName, lastName, emailAddress FROM voyageManagers 
+        WHERE emailAddress = :voyage_email';
+    $statement = $db->prepare($queryUserDetails);
+    $statement->bindValue(':voyage_email', $voyage_email); 
+    $statement->execute();
+    $userDetails = $statement->fetch();
+
+    //var_dump($userDetails);
+
+    $firstName = $userDetails['firstName'];
+    $lastName = $userDetails['lastName'];
+    $emailAddress = $userDetails['emailAddress'];
+    $statement->closeCursor();
+
+    if (isset($_SESSION['is_valid_admin']) && $_SESSION['is_valid_admin']) {
+
+        echo "Welcome $firstName $lastName ($emailAddress)";
     }
-?>
+    */
+    ?>
+    <!--------Welcome Message------------------------------->
 </div>
-    <br> 
+<br> 
 </header>
 
 </body>

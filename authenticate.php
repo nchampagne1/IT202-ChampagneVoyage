@@ -5,13 +5,15 @@ IT 202-004, Project 04, nac88@njit.edu-->
 require_once('admin_db.php');
 session_start();
 
+$db = getDB();
+
 // Retrieve user input from POST
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $password = filter_input(INPUT_POST, 'password');
 
 // Validate email and password
 if (is_valid_admin_login($email, $password)) {
-    $_SESSION['is_valid_admin'] = true;
+
     
     // Store admin details in the session array
     $_SESSION['is_valid_admin'] = true;

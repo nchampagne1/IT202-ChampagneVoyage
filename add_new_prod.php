@@ -1,6 +1,9 @@
 <!--Nahallah Champagne, March 22, 2024
 IT 202-004, Project 03, nac88@njit.edu-->
 
+<!--Nahallah Champagne, April 19, 2024
+IT 202-004, Project 05, nac88@njit.edu-->
+
 <?php
 //Use database local or njit local
 require_once('database_njit.php');
@@ -17,22 +20,22 @@ $color = filter_input(INPUT_POST, 'color');
 
 // Validate inputs
 if ($code == NULL) {
-    $error = "Column \"Code\" is empty. Please check all fields and try again.";
+    $error = "Column \"Code\" is empty.";
     echo "$error <br>";
 }
 
 if ($name == NULL) {
-    $error = "Column \"Name\" is empty. Please check all fields and try again.";
+    $error = "Column \"Name\" is empty.";
     echo "$error <br>";
 }
 
 if ($description == NULL) {
-    $error = "Column \"Description\" is empty. Please check all fields and try again.";
+    $error = "Column \"Description\" is empty.";
     echo "$error <br>";
 }
 
 if ($price == NULL || $price == false) {
-    $error = "Column \"Price\" is empty or invaild. Please check all fields and try again.";
+    $error = "Column \"Price\" is empty or invaild.";
     echo "$error <br>";
 } else if ($price <= 0 || $price >= 5000) {
     $error = "Column \"Price\" is invaild. Please enter a valid price.";
@@ -40,12 +43,12 @@ if ($price == NULL || $price == false) {
 }
 
 if ($size == NULL) {
-    $error = "Column \"Size\" is empty. Please check all fields and try again.";
+    $error = "Column \"Size\" is empty.";
     echo "$error <br>";
 }
 
 if ($color == NULL) {
-    $error = "Column \"Color\" is empty. Please check all fields and try again.";
+    $error = "Column \"Color\" is empty.";
     echo "$error <br>";
 }
 
@@ -67,11 +70,11 @@ if ($travel_category_id == NULL || $travel_category_id == FALSE || $code == NULL
     $statement_duplicate->closeCursor();
 
     if ($existing_product) {
-        // If code already exists, print an error message to let the user know
+        // if code already exists
         echo "Error: Travel product code '$code' already exists. Please enter a unique code.<br>";
     } else {
 
-        // Add the product to the database  
+        // Add the prod to the database  
         $query = 'INSERT INTO travelItems
                     (travelItemCategoryID, travelItemCode, travelItemName, 
                     description, price, size, color)

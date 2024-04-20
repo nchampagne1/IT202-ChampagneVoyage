@@ -40,31 +40,32 @@ IT 202-004, Project 01, nac88@njit.edu-->
     <form action = "shipping_results_page.php" method="post">
         <label>First Name: </label>
         <input type = "text" name = 'first_name' value=" <?php echo htmlspecialchars 
-        ($first_name); ?>" />
+        ($first_name); ?>" required/>
 
         <label>Last Name: </label>
         <input type = "text" name = 'last_name' value=" <?php echo htmlspecialchars 
-        ($last_name); ?>" />
+        ($last_name); ?>" required/>
         <br>
         <label>Address: </label>
         <input type = "text" name = 'address' value=" <?php echo htmlspecialchars 
-        ($address); ?>" />
+        ($address); ?>" required placeholder="123 Main St"/>
         
         <label>City: </label>
         <input type = "text" name = 'city' value=" <?php echo htmlspecialchars 
-        ($city); ?>" />
+        ($city); ?>" required/>
         
         <label>State: </label>
         <input type = "text" name = 'state' value=" <?php echo htmlspecialchars 
-        ($state); ?>" />
+        ($state); ?>" required/>
 
         <label>Zip Code: </label>
         <input type = "text" name = 'zip_code' value=" <?php echo htmlspecialchars 
-        ($zip_code); ?>" />
+        ($zip_code); ?>" required placeholder="x00000"/>
         <br>
         <label>Phone Number: </label>
         <input type = "text" name = 'phone_num' value=" <?php echo htmlspecialchars 
-        ($phone_num); ?>" />
+        ($phone_num); ?>" required 
+        placeholder="999-999-9999" pattern="\d{3}{\-}\d{3}{\-}\d{4}"/>
         <br><br>
         
         <!----------Package Dimemsions---------------->

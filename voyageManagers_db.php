@@ -17,7 +17,9 @@ function add_voyageManager($firstName, $lastName, $email, $password) {
     $statement->execute();
     $statement->closeCursor();
 } //end of Function add_voyageManager
+
 //add_voyageManager("Nahallah", "Champagne", "nahallah@cvoyage.com", "nac88");
 //add_voyageManager("Rick", "Grimes", "rickgrimes@cvoyage.com", "rick!");
 //add_voyageManager("Percy", "Jackson", "percyj@cvoyage.com", "percyj!");
+
 ?>
