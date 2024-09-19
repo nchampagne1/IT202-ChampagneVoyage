@@ -1,6 +1,6 @@
 # CHAMPAGNE VOYAGE
 ## IT202-nac88-travelwebsite
-# Travel Accessories:	Luggage Set, Travel Pillow, TSA-approved Travel Bottles, Passport Holder, Portable Luggage Scale
+Travel Accessories:	Luggage Set, Travel Pillow, TSA-approved Travel Bottles, Passport Holder, Portable Luggage Scale
 Champagne Voyage is a mock e-commerce website that allows users to browse, search, and purchase various travel accessories. This project was developed as part of a class assignment to demonstrate basic web development and database integration skills.
 
 # Features
