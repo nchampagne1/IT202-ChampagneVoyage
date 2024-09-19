@@ -5,7 +5,6 @@
 
 # Features
 - **Browse Products**: View a variety of travel accessories, including luggage, travel-sized toiletries, portable gadgets, and more.
-- **Search Functionality**: Users can search for products by name or category.
 - **Product Pages**: Detailed pages for each product, including descriptions, images, and prices.
 - **Shopping Cart**: Add items to your cart and manage quantities before checkout.
 - **Checkout Process**: Simple checkout process to review and confirm purchases.
