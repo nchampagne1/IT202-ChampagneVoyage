@@ -5,14 +5,14 @@
 
 # Features
 - **Browse Products**: View a variety of travel accessories, including luggage, travel-sized toiletries, portable gadgets, and more.
-  
+- **Product Manipulation**: Ability to add new products to the product database and delete them.
+-   
   ![Screenshot of Product List](https://github.com/NahallahC/IT202-nac88-travelwebsite/blob/main/screenshots/userProductList.png)
-- **Product Manipulation**: Ability to add new products to the product database and even delete them too
 - **Product Pages**: Detailed pages for each product, including descriptions, images, and prices.
   
   ![Screenshot of Product List](https://github.com/NahallahC/IT202-nac88-travelwebsite/blob/main/screenshots/userProductItem.png)
 - **Shipping Label**: Create shipping labels by inputing address and product details
-- 
+- **User authentication**:Login and signup functionality which grants specific user access to the website.
 
 
 # Technologies Used
@@ -22,7 +22,7 @@
 
 # Usage
 - Browse the website to explore products.
-- User authentication (login and signup functionality).
+- 
 - Create shipping labels
 - Add and delete roducts
 - The project includes sample data for testing purposes.
