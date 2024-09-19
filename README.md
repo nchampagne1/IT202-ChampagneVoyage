@@ -4,8 +4,8 @@ Travel Accessories:	Luggage Set, Travel Pillow, TSA-approved Travel Bottles, Pas
 Champagne Voyage is a mock e-commerce website that allows users to browse, search, and purchase various travel accessories. This project was developed as part of a class assignment to demonstrate basic web development and database integration skills.
 
 # Features
-Browse Products: View a variety of travel accessories, including luggage, travel-sized toiletries, portable gadgets, and more.
-Search Functionality: Users can search for products by name or category.
+- **Browse Products**: View a variety of travel accessories, including luggage, travel-sized toiletries, portable gadgets, and more.
+- **Search Functionality**: Users can search for products by name or category.
 Product Pages: Detailed pages for each product, including descriptions, images, and prices.
 Shopping Cart: Add items to your cart and manage quantities before checkout.
 Checkout Process: Simple checkout process to review and confirm purchases.
