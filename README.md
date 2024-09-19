@@ -5,12 +5,14 @@
 
 # Features
 - **Browse Products**: View a variety of travel accessories, including luggage, travel-sized toiletries, portable gadgets, and more.
+  ![Screenshot of Product List](https://github.com/NahallahC/IT202-nac88-travelwebsite/blob/main/screenshots/userProductList.png)
 - **Product Pages**: Detailed pages for each product, including descriptions, images, and prices.
-- **Shopping Cart**: Add items to your cart and manage quantities before checkout.
+  ![Screenshot of Product List](https://github.com/NahallahC/IT202-nac88-travelwebsite/blob/main/screenshots/userProductItem.png)
+- **Shipping Label**: Create shipping labels by inputing address and product details
 - **Checkout Process**: Simple checkout process to review and confirm purchases.
-![Screenshot of Product List](https://github.com/NahallahC/IT202-nac88-travelwebsite/blob/main/screenshots/userProductList.png)
 
-Technologies Used
+
+# Technologies Used
 - Frontend: HTML, CSS, JavaScript, and JQuery for the user interface and interactivity.
 - Backend: PHP for handling server-side logic and managing database queries.
 - Database: MySQL to store product information, user data, and order details.
