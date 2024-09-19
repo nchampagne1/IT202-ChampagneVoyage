@@ -8,6 +8,7 @@
 - **Product Pages**: Detailed pages for each product, including descriptions, images, and prices.
 - **Shopping Cart**: Add items to your cart and manage quantities before checkout.
 - **Checkout Process**: Simple checkout process to review and confirm purchases.
+//![Screenshot of homepage]()
 
 Technologies Used
 - Frontend: HTML, CSS, JavaScript, and JQuery for the user interface and interactivity.
