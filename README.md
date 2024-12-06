@@ -24,7 +24,6 @@ Champagne Voyage is a mock e-commerce website that allows users to browse, searc
 
 # Usage
 - Browse the website to explore products.
-- 
 - Create shipping labels
 - Add and delete roducts
 - The project includes sample data for testing purposes.
